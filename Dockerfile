@@ -1,7 +1,5 @@
 FROM node:12.22.10
 
-RUN npm install -g bower grunt-cli gulp
-
 # Setup to run with UID of non-root user
 RUN apt update && apt -y --no-install-recommends install \
     ca-certificates \
