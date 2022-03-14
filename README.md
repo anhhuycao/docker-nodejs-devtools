@@ -1,4 +1,5 @@
 # Node.js w/ Bower, Grunt & Gulp
+
 ## This Docker image has been setup to avoid permission issues when using Docker Volumes, implement from this tutorial [HANDLING PERMISSIONS WITH DOCKER VOLUMES](https://denibertovic.com/posts/handling-permissions-with-docker-volumes/)
 
 It can run with UID of current user in your machine to avoid permission issue, default UID is 1000, not root user
@@ -8,10 +9,11 @@ This repository contains a **Dockerfile** of [Node.js](http://nodejs.org/) w/ [B
 
 ### Base Docker Image
 
-* [Nodejs](https://hub.docker.com/_/node)
+- [Nodejs](https://hub.docker.com/_/node)
 
 ### Supported tags and respective `Dockerfile` links
-* [`latest`](https://github.com/anhhuycao/docker-nodejs-devtools/blob/master/Dockerfile)
+
+- [`latest`](https://github.com/anhhuycao/docker-nodejs-devtools/blob/master/Dockerfile)
 
 ### Installation
 

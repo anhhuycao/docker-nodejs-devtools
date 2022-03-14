@@ -1,10 +1,9 @@
-FROM node:latest
-MAINTAINER huy.ca <huy.ca@geekup.vn>
+FROM node:12.22.10
 
 RUN npm install -g bower grunt-cli gulp
 
 # Setup to run with UID of non-root user
-RUN apt-get update && apt-get -y --no-install-recommends install \
+RUN apt update && apt -y --no-install-recommends install \
     ca-certificates \
     curl
 
@@ -21,5 +20,4 @@ RUN chmod +x /usr/local/bin/entrypoint.sh
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 WORKDIR /data
-# Set default command
 CMD ["/bin/bash"]
